@@ -14,12 +14,12 @@
 }
 
 .clients-list__item {
-  flex-basis: calc(100% / 2 - 30px);
+  flex-basis: calc(100% / 2 - 15px);
   height: calc(100% / 3 - 30px);
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-basis: calc(100% / 3 - 30px);
-    height: calc(100% / 2 - 30px);
+   
   }
 }
 
@@ -29,18 +29,15 @@
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
-  //     min-width: 135px;
-  //   width: 210px;
-  height: 92px;
+   height: 92px;
   justify-content: center;
   align-items: center;
   color: var(--color-icon);
 
-  //   transition-property: color, border;
-  //   transition-duration: var(--timing-duration);
-  //   transition-timing-function: var(--timing-function);
+    transition-property: color, border;
+    transition-duration: var(--timing-duration);
+    transition-timing-function: var(--timing-function);
 
-  padding: 16px 0;
 
   &:hover,
   &:focus {
