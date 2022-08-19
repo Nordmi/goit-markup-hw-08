@@ -1,11 +1,11 @@
 .clients-list {
   display: flex;
+
   flex-wrap: wrap;
 
   justify-content: center;
 
   gap: 30px;
-
   color: inherit;
 }
 
@@ -14,7 +14,8 @@
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  max-width: 210px;
+
+  width: 210px;
   height: 92px;
   justify-content: center;
   align-items: center;
