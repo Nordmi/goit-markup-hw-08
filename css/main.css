@@ -47,7 +47,8 @@ body {
   text-decoration: none;
 }
 
-img {
+img,
+svg {
   display: block;
   max-width: 100%;
   height: auto;
@@ -843,11 +844,16 @@ textarea {
   color: inherit;
 }
 
+.clients-list__item {
+  max-width: 100%;
+}
+
 .clients-list__link {
   display: flex;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 210px;
+  min-width: 130px;
+  max-width: 210px;
   height: 92px;
   justify-content: center;
   align-items: center;
