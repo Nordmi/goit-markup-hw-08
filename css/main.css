@@ -843,24 +843,32 @@ textarea {
   gap: 30px;
   color: inherit;
 }
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    flex-wrap: nowrap;
+  }
+}
 
 .clients-list__item {
-  max-width: 100%;
+  flex-basis: calc(50% - 30px);
+  height: calc(33.3333333333% - 30px);
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients-list__item {
+    flex-basis: calc(33.3333333333% - 30px);
+    height: calc(50% - 30px);
+  }
 }
 
 .clients-list__link {
   display: flex;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  min-width: 130px;
-  max-width: 210px;
   height: 92px;
   justify-content: center;
   align-items: center;
   color: var(--color-icon);
-  transition-property: color, border;
-  transition-duration: var(--timing-duration);
-  transition-timing-function: var(--timing-function);
+  padding: 16px 0;
 }
 .clients-list__link:hover, .clients-list__link:focus {
   color: var(--accent-color);
