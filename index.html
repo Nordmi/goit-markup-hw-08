@@ -35,6 +35,16 @@
           </ul>
         </nav>
 
+			<button
+          type="button"
+          class="mobile-menu-open"
+          data-menu-open
+			 >
+          <svg width="24" height="16" aria-label="Перемикач мобільного меню">
+            <use class="icon-menu" href="./images/icons/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+
         <ul class="contact list">
           <li class="contact__item">
             <a class="contact__link link" href="mailto:info@devstudio.com">
@@ -53,10 +63,26 @@
             </a>
           </li>
         </ul>
-      </div>
+	    </div>
+
+				<div class="mobile-menu" data-menu>
+			<div class="container mobile-menu__container">
+			<button class="mobile-menu__close-btn" data-menu-close>
+				<svg class="mobile-menu__close-icon" width="19" height="19">
+					<use href="./images/icons/symbol-defs.svg#icon-menu-close"></use>
+				</svg>
+			</button>
+			<ul>
+					<li><a href="">link1</a></li>
+					<li><a href="">link1</a></li>
+					<li><a href="">link1</a></li>
+					<li><a href="">link1</a></li>
+				</ul>
+			</div>
+		</div>
     </header>
 
-    <main class="main-page">
+    <!-- <main class="main-page">
       <section class="section hero">
         <div class="container hero__container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
@@ -536,12 +562,13 @@
         </form>
 
         <button class="button-close" data-modal-close>
-          <svg class="icon-close" width="11" height="11">
-            <use href="./images/icons/symbol-defs.svg#icon-close"></use>
+          <svg class="icon-close-modal" width="11" height="11">
+            <use href="./images/icons/symbol-defs.svg#icon-close-modal"></use>
           </svg>
         </button>
-      </div>
+      </div> -->
     </div>
+	 <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
