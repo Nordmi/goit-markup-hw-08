@@ -1,12 +1,24 @@
 .project-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: block;
+
+  @media screen and (min-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+  }
 }
+@media screen and (max-width: 767px) {
+  .project-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+
 
 .project-list__link {
   display: block;
-  transition-property: box-shadow;
+   transition-property: box-shadow;
   transition-duration: var(--timing-duration);
   transition-timing-function: var(--timing-function);
 
@@ -20,6 +32,13 @@
       transform: translateY(0);
     }
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 }
 
 /* Create overlay for card-box */
@@ -29,6 +48,9 @@
   overflow: hidden;
 }
 
+.project__image {
+  width: 100%;
+}
 .project__text {
   position: absolute;
   top: 0;
@@ -47,19 +69,28 @@
   transition-property: transform;
   transition-duration: var(--timing-duration);
   transition-timing-function: var(--timing-function);
+
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
-/* <<=====>> End create overlay for card-box <<=====>> */
+// /* <<=====>> End create overlay for card-box <<=====>> */
 
 .project-meta {
   border: 1px Solid #eeeeee;
   border-top: none;
   padding: 20px 24px;
+  flex-grow: 1;
 }
 
-.project-list__item:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 30px;
-}
+// .project-list__item:not(:nth-last-child(-n + 3)) {
+//   margin-bottom: 30px;
+
+//   @media screen and (min-width: 768px) and (max-width: 1199px) {
+//     margin-bottom: 0;
+//   }
+// }
 
 .project-meta__subtitle {
   margin-bottom: 4px;

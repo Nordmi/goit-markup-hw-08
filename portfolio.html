@@ -22,15 +22,24 @@
       <div class="container page-header-container">
         <nav class="page-nav">
           <a class="page-header__logo logo link" href="./index.html"
-            ><span class="logo__text--blue">Web</span>Studio</a>
+            ><span class="logo__text--blue">Web</span>Studio</a
+          >
           <ul class="menu-list list">
-            <li class="menu__item"><a class="menu__link link" href="./">Студія</a></li>
+            <li class="menu__item">
+              <a class="menu__link link" href="./">Студія</a>
+            </li>
             <li class="menu__item">
               <a class="menu__link menu__link--active" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="menu__item"><a class="menu__link link" href="./">Контакти</a></li>
           </ul>
         </nav>
+
+        <button type="button" class="mobile-menu-open" data-menu-open>
+          <svg width="24" height="16" aria-label="Перемикач мобільного меню">
+            <use class="icon-menu" href="./images/icons/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
 
         <ul class="contact list">
           <li class="contact__item">
@@ -51,6 +60,22 @@
           </li>
         </ul>
       </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="19" height="19">
+              <use href="./images/icons/symbol-defs.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+          <ul>
+            <li><a href="">link1</a></li>
+            <li><a href="">link1</a></li>
+            <li><a href="">link1</a></li>
+            <li><a href="">link1</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <main class="portfolio-page">
@@ -60,12 +85,14 @@
 
           <ul class="button-list list">
             <li class="button-list__item">
-              <button class="button butbutton-list__secondary button-list--active" type="button">Все</button>
+              <button class="button butbutton-list__secondary button-list--active" type="button">
+                Все
+              </button>
             </li>
             <li class="button-list__item">
               <button class="button butbutton-list__secondary" type="button">Веб-сайти</button>
             </li>
-            <li class="button-list__item">
+            <li class="button-list__item button-list__item-break">
               <button class="button butbutton-list__secondary" type="button">Додатки</button>
             </li>
             <li class="button-list__item">
@@ -228,7 +255,9 @@
                   </p>
                 </div>
                 <div class="project-meta">
-                  <h2 class="project-meta__subtitle">Видання <span lang="eu">Limited Edition</span></h2>
+                  <h2 class="project-meta__subtitle">
+                    Видання <span lang="eu">Limited Edition</span>
+                  </h2>
                   <p class="project-meta__text">Дизайн</p>
                 </div>
               </a>
@@ -284,12 +313,11 @@
 
     <footer class="page-footer footer">
       <div class="container page-footer-container">
-        <div class="address-wrapper">
-          <a class="page-footer__logo logo link" href="./index.html"
-            ><span class="logo__text--blue">Web</span>Studio</a
-          >
-
+        <div class="tablet-footer-wrapper">
           <address class="address">
+            <a class="page-footer__logo logo link" href="./index.html"
+              ><span class="logo__text--blue">Web</span>Studio</a
+            >
             <ul class="address-list list">
               <li class="address__item">
                 <a class="address__link link" href="https://goo.gl/maps/wxYUtSVj1QLYrL1h8"
@@ -297,56 +325,62 @@
                 >
               </li>
               <li class="address__item">
-                <a class="menu__link" href="mailto:info@example.com">info@example.com</a>
+                <a class="menu__link link" href="mailto:info@example.com">info@example.com</a>
               </li>
               <li class="address__item">
                 <a class="menu__link link" href="tel:+380961111111">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
+
+          <div class="join">
+            <p class="join__title">приєднуйтесь</p>
+            <ul class="media media-footer-list list">
+              <li class="media__item">
+                <a class="media__link-footer" href="#">
+                  <svg class="media__icon">
+                    <use href="./images/icons/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="media__item">
+                <a class="media__link-footer" href="#"
+                  ><svg class="media__icon">
+                    <use href="./images/icons/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="media__item">
+                <a class="media__link-footer" href="#"
+                  ><svg class="media__icon">
+                    <use href="./images/icons/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="media__item">
+                <a class="media__link-footer" href="#"
+                  ><svg class="media__icon">
+                    <use href="./images/icons/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="join">
-          <p class="join__title">приєднуйтесь</p>
-          <ul class="media list">
-            <li class="media__item">
-              <a class="media__link-footer" href="#">
-                <svg class="media__icon">
-                  <use href="./images/icons/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
 
-            <li class="media__item">
-              <a class="media__link-footer" href="#"
-                ><svg class="media__icon">
-                  <use href="./images/icons/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="media__item">
-              <a class="media__link-footer" href="#"
-                ><svg class="media__icon">
-                  <use href="./images/icons/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="media__item">
-              <a class="media__link-footer" href="#"
-                ><svg class="media__icon">
-                  <use href="./images/icons/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-         <form class="form-subscribe" autocomplete="off">
+        <form class="form-subscribe" autocomplete="off">
           <div class="subscribe-container" role="group" aria-labelledby="contact-details-head">
             <b id="contact-details-head" class="form-subscribe__title">Підпишіться на розсилку</b>
             <div class="button-pos">
               <label class="form-subscribe__mail-label">
-                <input class="form-subscribe__input" type="email" name="email" placeholder="E-mail" />
+                <input
+                  class="form-subscribe__input"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                />
               </label>
               <button class="button-submit button" type="submit">
                 <span class="button-submit__text">Підписатися</span>
@@ -359,5 +393,8 @@
         </form>
       </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
