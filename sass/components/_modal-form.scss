@@ -5,11 +5,15 @@
 
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
 
   color: var(--title-text-color);
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 
 .label {
@@ -80,12 +84,17 @@
 
 .text-policy {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
 
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.17;
+  }
 }
 
 .link-policy {
@@ -148,4 +157,14 @@
 
 .text-button {
   margin-right: 0;
+}
+
+.comment-textarea::placeholder {
+  font-size: 14px;
+  line-height: 1.14;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.17;
+  }
 }

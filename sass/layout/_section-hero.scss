@@ -38,8 +38,7 @@
 }
 
 .hero__button {
-  padding: 10px 32px;
-  min-width: 200px;
+  padding: 10px 24px;
 
   background-color: var(--accent-color);
   color: var(--primary-white-color);
@@ -60,5 +59,9 @@
   &:focus {
     background-color: var(--color-hover-button);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 10px 32px;
   }
 }
