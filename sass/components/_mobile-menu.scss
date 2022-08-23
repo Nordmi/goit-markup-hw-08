@@ -112,6 +112,7 @@
 
 .menu-social {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .menu-social__item:not(:last-child) {
