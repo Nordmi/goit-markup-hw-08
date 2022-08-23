@@ -187,37 +187,64 @@
           <ul class="work-list list">
             <li class="work-list__item">
               <div class="work__content">
-                <img
-                  class="work__image"
-                  src="./images/work/keyboard.jpg"
-                  alt="Верстка"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/services/desktop-app-370/desktop-app-370.jpg    1x,
+                      ./images/desktop/services/desktop-app-370/desktop-app-370@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="work__image"
+                    src="./images/desktop/services/desktop-app-370/desktop-app-370.jpg"
+                    alt="Верстка"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <p class="work__name">Десктопні додатки</p>
               </div>
             </li>
             <li class="work-list__item">
               <div class="work__content">
-                <img
-                  class="work__image"
-                  src="./images/work/notebook.jpg"
-                  alt="Мобільні додатки"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/services/mobile-app-370/mobile-app-370.jpg    1x,
+                      ./images/desktop/services/mobile-app-370/mobile-app-370@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="work__image"
+                    src="./images/desktop/services/mobile-app-370/mobile-app-370.jpg"
+                    alt="Мобільні додатки"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <p class="work__name">Мобільні додатки</p>
               </div>
             </li>
             <li class="work-list__item">
               <div class="work__content">
-                <img
-                  class="work__image"
-                  src="./images/work/planetable.jpg"
-                  alt="Планшет"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/services/design-solutions-370/design-solutions-370.jpg    1x,
+                      ./images/desktop/services/design-solutions-370/design-solutions-370@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="work__image"
+                    src="./images/desktop/services/design-solutions-370/design-solutions-370.jpg"
+                    alt="Планшет"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <p class="work__name">Дизайнерські рішення</p>
               </div>
             </li>
@@ -230,13 +257,37 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list__item">
-              <img
-                class="team__image"
-                src="./images/team/productdesigner.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/team/igor-270/igor-270.jpg    1x,
+                    ./images/desktop/team/igor-270/igor-270@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team/igor-354/igor-354.jpg    1x,
+                    ./images/tablet/team/igor-354/igor-354@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/team/igor-450/igor-450.jpg    1x,
+                    ./images/mobile/team/igor-450/igor-450@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="team__image"
+                  src="./images/mobile/team/igor-450/igor-450.jpg"
+                  alt="Игорь Демьяненко"
+                  width="270"
+                  height="260"
+                />
+              </picture>
+
               <h3 class="team__subtitle">Игорь Демьяненко</h3>
               <p class="team__text" lang="eu">Product Designer</p>
 
@@ -275,15 +326,39 @@
             </li>
 
             <li class="team-list__item">
-              <img
-                class="team__image"
-                src="./images/team/frontenddeveloper.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/team/olga-270/olga-270.jpg    1x,
+                    ./images/desktop/team/olga-270/olga-270@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team/olga-354/olga-354.jpg    1x,
+                    ./images/tablet/team/olga-354/olga-354@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/team/olga-450/olga-450.jpg    1x,
+                    ./images/mobile/team/olga-450/olga-450@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="team__image"
+                  src="./images/mobile/team/olga-450/olga-450.jpg"
+                  alt="Ольга Репина"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <h3 class="team__subtitle">Ольга Репина</h3>
               <p class="team__text" lang="eu">Frontend Developer</p>
+
               <ul class="media list media-team">
                 <li class="media__item">
                   <a class="media__link" href="#">
@@ -318,15 +393,39 @@
               </ul>
             </li>
             <li class="team-list__item">
-              <img
-                class="team__image"
-                src="./images/team/marketing.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/team/nikolay-270/nikolay-270.jpg    1x,
+                    ./images/desktop/team/nikolay-270/nikolay-270@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team/nikolay-354/nikolay-354.jpg    1x,
+                    ./images/tablet/team/nikolay-354/nikolay-354@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/team/nikolay-450/nikolay-450.jpg    1x,
+                    ./images/mobile/team/nikolay-450/nikolay-450@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="team__image"
+                  src="./images/mobile/team/nikolay-450/nikolay-450.jpg"
+                  alt="Николай Тарасов"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <h3 class="team__subtitle">Николай Тарасов</h3>
               <p class="team__text" lang="eu">Marketing</p>
+
               <ul class="media list media-team">
                 <li class="media__item">
                   <a class="media__link" href="#">
@@ -361,13 +460,36 @@
               </ul>
             </li>
             <li class="team-list__item">
-              <img
-                class="team__image"
-                src="./images/team/uidesigner.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/team/mykhail-270/mykhail-270.jpg    1x,
+                    ./images/desktop/team/mykhail-270/mykhail-270@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team/mykhail-354/mykhail-354.jpg    1x,
+                    ./images/tablet/team/mykhail-354/mykhail-354@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/team/mykhail-450/mykhail-450.jpg    1x,
+                    ./images/mobile/team/mykhail-450/mykhail-450@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="team__image"
+                  src="./images/mobile/team/mykhail-450/mykhail-450.jpg"
+                  alt="Михаил Ермаков"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <h3 class="team__subtitle">Михаил Ермаков</h3>
               <p class="team__text" lang="eu">UI Designer</p>
               <ul class="media list media-team">
